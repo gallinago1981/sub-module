@@ -1,0 +1,35 @@
+openapi: 3.1.0
+info:
+  title: Verify Submodule OpenAPI Spec Build
+  description: サブモジュールのブランチでビルドが可能かを検証するためのOpenAPI Spec
+  version: 1.0.0
+paths:
+  /greet/{greetType}:
+    get:
+      summary: Greet
+      description: Greetを返す
+      tags:
+        - Greet
+      parameters:
+        - in: path
+          name: greetType
+          required: true
+          schema:
+            type: string
+            enum:
+              - morning
+              - afternoon
+              - evening
+          description: 挨拶の種類
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Hello World
+

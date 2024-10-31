@@ -1,7 +1,7 @@
 openapi: 3.1.0
 info:
   title: Verify Submodule OpenAPI Spec Build
-  description: サブモジュールとしてOpenAPI Specをメインモジュールに取り込んだ際に
+  description: サブモジュールとしてOpenAPI Specをメインモジュールに取り込んだ際にビルドされるOpenAPI Spec
   version: 1.0.0
 paths:
    /hello-world:
