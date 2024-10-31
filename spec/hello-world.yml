@@ -1,0 +1,21 @@
+openapi: 3.1.0
+info:
+  title: Verify Submodule OpenAPI Spec Build
+  description: サブモジュールとしてOpenAPI Specをメインモジュールに取り込んだ際に
+  version: 1.0.0
+paths:
+   /hello-world:
+    get:
+      summary: Hello World
+      description: Hello Worldを返す
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Hello World

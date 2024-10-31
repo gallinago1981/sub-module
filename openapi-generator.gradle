@@ -1,0 +1,3 @@
+openApiValidate {
+    inputSpec = "$projectDir/spec/hello-world.yml"
+}
