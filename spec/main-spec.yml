@@ -6,3 +6,5 @@ info:
 paths:
   /hello-world:
     $ref: 'hello-world.yml#/paths/~1hello-world'
+  /greeting:
+    $ref: 'greet.yml#/paths/~1greet~1{greetType}'
