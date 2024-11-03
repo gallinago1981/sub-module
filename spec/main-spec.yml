@@ -1,0 +1,8 @@
+openapi: 3.1.0
+info:
+  title: Verify Submodule OpenAPI Spec Build
+  description: サブモジュールとしてOpenAPI Specをメインモジュールに取り込んだ際に
+  version: 1.0.0
+paths:
+  /hello-world:
+    $ref: 'hello-world.yml#/paths/~1hello-world'
